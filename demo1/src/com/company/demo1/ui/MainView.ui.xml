@@ -12,6 +12,10 @@
         <XdevButton caption="Button" x:name="button">
             <x:constraints gridx="1" gridy="1" weighty="0.0" weightx="0.0" />
         </XdevButton>
+        <XdevButton caption="Button" x:name="button2">
+            <x:constraints gridx="2" gridy="3" weighty="0.0" weightx="0.0" />
+            <x:event>click.buttonClick</x:event>
+        </XdevButton>
     </XdevGridLayout>
 </XdevView>
 
