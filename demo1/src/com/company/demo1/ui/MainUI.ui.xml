@@ -16,6 +16,7 @@
         </XdevButton>
         <XdevButton caption="Button" x:name="button2">
             <x:constraints gridx="2" gridy="2" weighty="0.0" weightx="0.0" />
+            <x:event>click.buttonClick</x:event>
         </XdevButton>
     </XdevGridLayout>
     <XdevNavigator x:name="navigator" x:singleComponentContainer="MainUI">

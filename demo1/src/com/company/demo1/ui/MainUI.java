@@ -4,7 +4,10 @@ package com.company.demo1.ui;
 import com.vaadin.annotations.Push;
 import com.vaadin.annotations.Theme;
 import com.vaadin.server.VaadinRequest;
+import com.vaadin.ui.Button;
 import com.vaadin.ui.CustomComponent;
+import com.vaadin.ui.Notification;
+import com.vaadin.ui.Notification.Type;
 import com.xdev.ui.XdevButton;
 import com.xdev.ui.XdevGridLayout;
 import com.xdev.ui.XdevUI;
@@ -23,6 +26,17 @@ public class MainUI extends XdevUI {
 	@Override
 	public void init(VaadinRequest request) {
 		this.initUI();
+	}
+
+	/**
+	 * Event handler delegate method for the {@link XdevButton}
+	 * {@link #button2}.
+	 *
+	 * @see Button.ClickListener#buttonClick(Button.ClickEvent)
+	 * @eventHandlerDelegate
+	 */
+	private void button2_buttonClick(Button.ClickEvent event) {
+		Notification.show("XDEV", "Hallo Richard!", Type.ERROR_MESSAGE);
 	}
 
 	/*
@@ -57,6 +71,8 @@ public class MainUI extends XdevUI {
 		this.gridLayout.setSizeFull();
 		this.setContent(this.gridLayout);
 		this.setSizeFull();
+	
+		button2.addClickListener(event -> this.button2_buttonClick(event));
 	} // </generated-code>
 
 	// <generated-code name="variables">
