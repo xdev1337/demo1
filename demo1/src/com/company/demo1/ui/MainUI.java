@@ -39,6 +39,7 @@ public class MainUI extends XdevUI {
 		Notification.show("XDEV", "Hallo Richard!", Type.ERROR_MESSAGE);
 	}
 
+	
 	/*
 	 * WARNING: Do NOT edit!<br>The content of this method is always regenerated
 	 * by the UI designer.
