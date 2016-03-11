@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
 	<persistence-unit name="demo1"><provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+<class>com.company.demo1.entities.Categories</class>
+<class>com.company.demo1.entities.CustomerDemographics</class>
+<class>com.company.demo1.entities.Customers</class>
+<class>com.company.demo1.entities.Employees</class>
+<class>com.company.demo1.entities.OrderDetails</class>
+<class>com.company.demo1.entities.OrderDetailsId</class>
+<class>com.company.demo1.entities.Orders</class>
+<class>com.company.demo1.entities.Products</class>
+<class>com.company.demo1.entities.Region</class>
+<class>com.company.demo1.entities.Shippers</class>
+<class>com.company.demo1.entities.Suppliers</class>
+<class>com.company.demo1.entities.Territories</class>
 	<properties>
 		<property name="hibernate.cache.use_second_level_cache"
 			value="true" />
@@ -15,6 +27,15 @@
 		<property name="hibernate.hbm2ddl.auto" value="validate" />
 		<property name="hibernate.transaction.auto_close_session"
 			value="false" />
+		<property name="hibernate.dialect"
+			value="org.hibernate.dialect.MySQL5InnoDBDialect" />
+		<property name="javax.persistence.jdbc.driver"
+			value="org.gjt.mm.mysql.Driver" />
+		<property name="javax.persistence.jdbc.url"
+			value="jdbc:mysql://xcmcustomertest.civloctexns3.eu-central-1.rds.amazonaws.com:3306/phIOnbV" />
+		<property name="javax.persistence.jdbc.user" value="phIOnbV" />
+		<property name="javax.persistence.jdbc.password"
+			value="nwdJHMXKEF" />
 	</properties>
 	</persistence-unit>
 </persistence>

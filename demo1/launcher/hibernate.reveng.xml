@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd">
+
+<hibernate-reverse-engineering>
+    <type-mapping>
+        <sql-type jdbc-type="INTEGER" not-null="true" hibernate-type="int" />
+        <sql-type jdbc-type="INTEGER" hibernate-type="java.lang.Integer" />
+        <sql-type jdbc-type="TINYINT" precision="1" not-null="true" hibernate-type="boolean" />
+        <sql-type jdbc-type="TINYINT" precision="1" hibernate-type="java.lang.Boolean" />
+        <sql-type jdbc-type="TINYINT" not-null="true" hibernate-type="short" />
+        <sql-type jdbc-type="TINYINT" hibernate-type="java.lang.Short" />
+    </type-mapping>
+    <table-filter match-catalog="phIOnbV" match-name="CustomerDemographics" />
+    <table-filter match-catalog="phIOnbV" match-name="Orders" />
+    <table-filter match-catalog="phIOnbV" match-name="Products" />
+    <table-filter match-catalog="phIOnbV" match-name="Suppliers" />
+    <table-filter match-catalog="phIOnbV" match-name="Categories" />
+    <table-filter match-catalog="phIOnbV" match-name="Customers" />
+    <table-filter match-catalog="phIOnbV" match-name="Order Details" />
+    <table-filter match-catalog="phIOnbV" match-name="Shippers" />
+    <table-filter match-catalog="phIOnbV" match-name="Employees" />
+    <table-filter match-catalog="phIOnbV" match-name="Region" />
+    <table-filter match-catalog="phIOnbV" match-name="Territories" />
+    <table-filter match-catalog="phIOnbV" match-name="CustomerCustomerDemo" />
+    <table-filter match-catalog="phIOnbV" match-name="EmployeeTerritories" />
+    <table catalog="phIOnbV" name="CustomerDemographics" class="com.company.demo1.entities.CustomerDemographics" />
+    <table catalog="phIOnbV" name="Orders" class="com.company.demo1.entities.Orders" />
+    <table catalog="phIOnbV" name="Products" class="com.company.demo1.entities.Products" />
+    <table catalog="phIOnbV" name="Suppliers" class="com.company.demo1.entities.Suppliers" />
+    <table catalog="phIOnbV" name="Categories" class="com.company.demo1.entities.Categories" />
+    <table catalog="phIOnbV" name="Customers" class="com.company.demo1.entities.Customers" />
+    <table catalog="phIOnbV" name="Order Details" class="com.company.demo1.entities.OrderDetails" />
+    <table catalog="phIOnbV" name="Shippers" class="com.company.demo1.entities.Shippers" />
+    <table catalog="phIOnbV" name="Employees" class="com.company.demo1.entities.Employees" />
+    <table catalog="phIOnbV" name="Region" class="com.company.demo1.entities.Region" />
+    <table catalog="phIOnbV" name="Territories" class="com.company.demo1.entities.Territories" />
+    <table catalog="phIOnbV" name="CustomerCustomerDemo" />
+    <table catalog="phIOnbV" name="EmployeeTerritories" />
+</hibernate-reverse-engineering>
+
