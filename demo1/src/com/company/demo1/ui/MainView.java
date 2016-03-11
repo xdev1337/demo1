@@ -41,8 +41,7 @@ public class MainView extends XdevView {
 		this.button2 = new XdevButton();
 		this.button3 = new XdevButton();
 	
-		this.button.setCaption("Button");
-		this.button2.setCaption("Button");
+		this.button2.setCaption("Cool");
 		this.button3.setCaption("Button");
 	
 		this.gridLayout.setColumns(4);
