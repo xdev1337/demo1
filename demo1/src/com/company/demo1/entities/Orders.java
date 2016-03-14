@@ -227,4 +227,13 @@ public class Orders implements java.io.Serializable {
 		this.orderDetails = orderDetails;
 	}
 
+	public void addOrderDatail(OrderDetails d) {
+		this.orderDetails.add(d);
+		d.setOrders(this);
+	}
+	
+	public void removeOrderDatail(OrderDetails d) {
+		this.orderDetails.remove(d);
+		d.setOrders(null);
+	}
 }

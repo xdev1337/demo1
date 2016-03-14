@@ -39,27 +39,23 @@ public class MainView extends XdevView {
 		this.gridLayout = new XdevGridLayout();
 		this.button = new XdevButton();
 		this.button2 = new XdevButton();
-		this.button3 = new XdevButton();
 	
 		this.button2.setCaption("Cool");
-		this.button3.setCaption("Button");
 	
-		this.gridLayout.setColumns(4);
-		this.gridLayout.setRows(4);
+		this.gridLayout.setColumns(3);
+		this.gridLayout.setRows(3);
 		this.button.setSizeUndefined();
 		this.gridLayout.addComponent(this.button, 0, 0);
 		this.button2.setSizeUndefined();
 		this.gridLayout.addComponent(this.button2, 1, 1);
-		this.button3.setSizeUndefined();
-		this.gridLayout.addComponent(this.button3, 2, 2);
 		CustomComponent gridLayout_hSpacer = new CustomComponent();
 		gridLayout_hSpacer.setSizeFull();
-		this.gridLayout.addComponent(gridLayout_hSpacer, 3, 0, 3, 2);
-		this.gridLayout.setColumnExpandRatio(3, 1.0F);
+		this.gridLayout.addComponent(gridLayout_hSpacer, 2, 0, 2, 1);
+		this.gridLayout.setColumnExpandRatio(2, 1.0F);
 		CustomComponent gridLayout_vSpacer = new CustomComponent();
 		gridLayout_vSpacer.setSizeFull();
-		this.gridLayout.addComponent(gridLayout_vSpacer, 0, 3, 2, 3);
-		this.gridLayout.setRowExpandRatio(3, 1.0F);
+		this.gridLayout.addComponent(gridLayout_vSpacer, 0, 2, 1, 2);
+		this.gridLayout.setRowExpandRatio(2, 1.0F);
 		this.gridLayout.setSizeFull();
 		this.setContent(this.gridLayout);
 		this.setSizeFull();
@@ -68,7 +64,7 @@ public class MainView extends XdevView {
 	} // </generated-code>
 
 	// <generated-code name="variables">
-	private XdevButton button, button2, button3;
+	private XdevButton button, button2;
 	private XdevGridLayout gridLayout; // </generated-code>
 
 
