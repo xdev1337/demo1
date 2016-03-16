@@ -9,11 +9,15 @@
     <x:constraints designWidth="600" zpos="0" designHeight="400" width="100%" height="100%" />
     <XdevGridLayout x:name="gridLayout">
         <x:constraints zpos="0" width="100%" height="100%" />
-        <XdevButton x:name="button">
+        <XdevButton caption="Horst" x:name="button">
             <x:constraints gridx="1" gridy="1" weighty="0.0" weightx="0.0" />
         </XdevButton>
         <XdevButton caption="Cool" x:name="button2">
             <x:constraints gridx="2" gridy="2" weighty="0.0" weightx="0.0" />
+            <x:event>click.buttonClick</x:event>
+        </XdevButton>
+        <XdevButton caption="Button" x:name="button3">
+            <x:constraints gridx="3" gridy="3" weighty="0.0" weightx="0.0" />
             <x:event>click.buttonClick</x:event>
         </XdevButton>
     </XdevGridLayout>
